@@ -9,7 +9,9 @@
   <body>
     <div class="container">
       <section class="header">
-        <img src="./assests/images/logo.png" alt="logo" width="200" height="150" />
+        <a href="/index.html">
+          <img src="./assests/images/logo.png" alt="logo" width="200" height="150" />
+        </a>
 
         <a href="./login.html" target="_blank">login</a>
       </section>
@@ -17,7 +19,29 @@
       <section class="content">
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" />
         <div>
-          <a href="./payment.html">Book Now</a>
+          <form id="booking-form" onsubmit="handleBooking(); return false;">
+            <div>
+              <label for="adults">Adults:</label>
+              <input type="number" id="adults" name="adults" value="1" min="1" step="1" />
+            </div>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="fromDate">From Date:</label>
+              <input type="date" id="fromDate" name="fromDate" required />
+            </div>
+            <div>
+              <label for="toDate">To Date:</label>
+              <input type="date" id="toDate" name="toDate" required />
+            </div>
+            <div>
+              <label for="total">Total:</label>
+              <input type="text" id="total" name="total" readonly />
+            </div>
+            <input type="submit" name="submit" value="Book Now" />
+          </form>
 
           <h2>Radisson Blu Hotel</h2>
           <p>RATING</p>
@@ -41,7 +65,7 @@
       </section>
 
       <section class="footer">
-        <a href="./contact.html" target="_blank">Contact Us</a>
+        <a href="./contact.html">Contact Us</a>
         <div class="social-icons">
           <a href="http://www.facebook.com" target="_blank">
             <img src="./assests/images/facebook.png" alt="facebook" />
@@ -56,5 +80,6 @@
         <div>©️ 2020 ROOM SEARCH PVT. LTD.</div>
       </section>
     </div>
+    <script src="./scripts/detail.js"></script>
   </body>
 </html>

@@ -6,6 +6,20 @@
     <title>Login</title>
   </head>
   <body>
-    <div>Login</div>
+    <div>
+      <form id="login-form" onsubmit="handleLogin(); return false;">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter Username" required />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter Password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script src="./scripts/common.js"></script>
   </body>
 </html>

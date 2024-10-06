@@ -6,6 +6,16 @@
     <title>Contact</title>
   </head>
   <body>
-    <div>Contact Us</div>
+    <div class="container">
+      <form onsubmit="handleContactSubmit(); return false;">
+        <p>Thank you for reaching out!!!</p>
+        <p>Please enter your email and we will get back to you.</p>
+        <div>
+          <input type="email" id="email" placeholder="Enter your email" required /><br>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="./scripts/common.js"></script>
   </body>
 </html>
