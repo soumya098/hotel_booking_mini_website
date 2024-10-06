@@ -1,11 +1,27 @@
+.searchbar {
+  height: 380px;
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .img-gallery {
+  margin: 0 15%;
   display: flex;
-  gap: 1px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-gallery > div {
+  flex: 1;
+  padding: 4%;
+  overflow: hidden;
 }
 
 .img-gallery img {
-  width: 150px;
-  height: 150px;
-  object-fit: fill;
-  padding-right: 2px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }

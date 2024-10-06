@@ -4,13 +4,22 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #e0e0e0;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* Optional: background color for the body */
+}
+
+header,
+footer {
+  background-color: rosybrown;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {

@@ -1,4 +1,8 @@
+.content {
+  margin: 0 4% 2% 4%;
+}
 .content img {
+  margin-top: 2%;
   width: 500px;
   height: 500px;
 }
