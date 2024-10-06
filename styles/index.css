@@ -1,17 +1,11 @@
 .img-gallery {
   display: flex;
-  gap: 2px;
+  gap: 1px;
 }
 
 .img-gallery img {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   object-fit: fill;
   padding-right: 2px;
-}
-
-.social-icons img{
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
 }
