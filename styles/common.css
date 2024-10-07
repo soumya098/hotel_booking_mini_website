@@ -5,26 +5,67 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e0e0e0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 header,
 footer {
   background-color: rosybrown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+  height: 60px;
+}
+
+header > a{
+  padding-right: 10px;
+}
+
+footer {
+  bottom: 0;
+  height: 50px;
+}
+
+footer > div {
+  margin: 0 12px;
+}
+
+.content {
+  flex: 1;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  overflow-y: auto;
+}
+
+.copyright {
+  font-size: 10px;
+  align-self: self-end;
 }
 
 a {
   text-decoration: none;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
+  color: #000;
 }
 
 .logo {

@@ -1,8 +1,30 @@
+.view-group {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.view-group > li {
+  padding: 10px;
+}
+
+.hotel-lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 .hotel-item {
   margin: 2%;
-  width: 40%;
+  flex: 0 0 calc(50% - 4%);
+  margin-bottom: 20px;
+  box-sizing: border-box;
   background-color: rgb(132, 136, 139);
 }
+
 .hotel-item img {
   width: 250px;
   height: 250px;
