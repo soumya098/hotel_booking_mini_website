@@ -1,3 +1,7 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
 .view-group {
   display: flex;
   justify-content: center;
@@ -18,14 +22,22 @@
 }
 
 .hotel-item {
-  margin: 2%;
-  flex: 0 0 calc(50% - 4%);
+  margin: 2% 4%;
+  flex: 0 0 calc(50% - 8%);
   margin-bottom: 20px;
-  box-sizing: border-box;
-  background-color: rgb(132, 136, 139);
+  /* box-sizing: border-box; */
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  gap: 2%;
 }
 
 .hotel-item img {
   width: 250px;
-  height: 250px;
+  height: 100%;
+}
+
+.hotel-item:first-child {
+  cursor: pointer;
 }

@@ -15,6 +15,11 @@ body {
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -23,8 +28,8 @@ body {
 
 header,
 footer {
-  background-color: rosybrown;
   display: flex;
+  background-color: rosybrown;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -38,8 +43,8 @@ header {
   height: 60px;
 }
 
-header > a{
-  padding-right: 10px;
+header > .login {
+  margin-right: 2%;
 }
 
 footer {
@@ -47,8 +52,11 @@ footer {
   height: 50px;
 }
 
-footer > div {
-  margin: 0 12px;
+footer > div:first-child {
+  margin-left: 2%;
+}
+footer > div:last-child {
+  margin-right: 2%;
 }
 
 .content {
@@ -60,12 +68,6 @@ footer > div {
 
 .copyright {
   font-size: 10px;
-  align-self: self-end;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
 }
 
 .logo {
