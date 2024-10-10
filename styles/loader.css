@@ -1,10 +1,14 @@
+body {
+  background-color: #fff;
+}
+
 div {
   width: 70px;
   height: 70px;
   border: 12px solid #f3f3f3;
   border-top: 12px solid #444444;
   border-radius: 50%;
-  animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {

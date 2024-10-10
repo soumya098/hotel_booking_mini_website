@@ -54,15 +54,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #f1f1f1;
   font-size: 12px;
-  opacity: 0; /* Start with hidden overlay */
-  transition: opacity 0.3s ease; /* Fade effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .image-container:hover .overlay {

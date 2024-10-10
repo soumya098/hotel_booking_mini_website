@@ -8,10 +8,12 @@
   gap: 50px;
   list-style-type: none;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .view-group > li {
   padding: 10px;
+  cursor: pointer;
 }
 
 .hotel-lists {
@@ -33,6 +35,14 @@
   gap: 2%;
 }
 
+.hotel-item:hover {
+  background-color: rosybrown;
+}
+
+.des{
+  padding-top: 2%;
+}
+
 .hotel-item img {
   width: 250px;
   height: 100%;
@@ -40,4 +50,8 @@
 
 .hotel-item:first-child {
   cursor: pointer;
+}
+
+#map-view {
+  display: none;
 }
