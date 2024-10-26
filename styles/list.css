@@ -16,22 +16,9 @@
   cursor: pointer;
 }
 
-.hotel-lists {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
 .hotel-item {
-  margin: 2% 4%;
-  flex: 0 0 calc(50% - 8%);
-  margin-bottom: 20px;
-  /* box-sizing: border-box; */
   background-color: lightgray;
-  display: flex;
-  flex-direction: row;
-  height: 250px;
+  height: auto;
   gap: 2%;
 }
 
@@ -46,6 +33,17 @@
 .hotel-item img {
   width: 250px;
   height: 100%;
+}
+
+/* For small screen sizes (max-width 576px and below) */
+@media (max-width: 576px) {
+  .hotel-item img {
+    width: 100%; /* Full width of .hotel-item */
+  }
+
+  #map-view img{
+    width: 100%;
+  }
 }
 
 .hotel-item:first-child {

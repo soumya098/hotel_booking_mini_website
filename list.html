@@ -29,7 +29,7 @@
         <button type="button" class="btn btn-sm btn-light login" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
       </header>
 
-      <section class="content">
+      <section class="content px-4">
         <div>
           <ul class="view-group nav nav-pills card-header-pills">
             <li class="nav-item" id="list-view-tab"><span class="nav-link active">List View</span></li>
@@ -37,51 +37,55 @@
           </ul>
         </div>
 
-        <div class="hotel-lists" id="hotel-view">
-          <div class="hotel-item">
-            <div>
-              <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson" />
-            </div>
-            <div class="des">
-              <h3>Radisson Blu Hotel</h3>
-              <div class="star-rating" data-rating="5">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+        <div class="row g-5 mt-1" id="hotel-view">
+          <div class="col-md-6 col-12">
+            <div class="hotel-item d-flex flex-sm-row flex-column">
+              <div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson" />
               </div>
-              <p>New Delhi</p>
-            </div>
-          </div>
-
-          <div class="hotel-item">
-            <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Lalit" /></div>
-            <div class="des">
-              <h3>The Lalit New Delhi</h3>
-              <div class="star-rating" data-rating="4">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star half-star"></i>
-                <i class="fa-solid fa-star"></i>
+              <div class="des">
+                <h3>Radisson Blu Hotel</h3>
+                <div class="star-rating" data-rating="5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>New Delhi</p>
               </div>
-              <p>New Delhi</p>
             </div>
           </div>
-
-          <div class="hotel-item">
-            <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj" /></div>
-            <div class="des">
-              <h3>Taj Palace</h3>
-              <div class="star-rating" data-rating="4">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+          <div class="col-md-6 col-12">
+            <div class="hotel-item d-flex flex-sm-row flex-column">
+              <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Lalit" /></div>
+              <div class="des">
+                <h3>The Lalit New Delhi</h3>
+                <div class="star-rating" data-rating="4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star half-star"></i>
+                </div>
+                <p>New Delhi</p>
               </div>
-              <p>New Delhi</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="hotel-item d-flex flex-sm-row flex-column">
+              <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj" /></div>
+              <div class="des">
+                <h3>Taj Palace</h3>
+                <div class="star-rating" data-rating="4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>New Delhi</p>
+              </div>
             </div>
           </div>
         </div>
@@ -89,65 +93,65 @@
         <div id="map-view">
           <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map" />
         </div>
-
-        <!-- Login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Please Login</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <form id="login-form" onsubmit="handleLogin(); return false;">
-                <div class="modal-body">
-                  <div class="mb-3 row justify-content-center align-items-center">
-                    <label for="username" class="form-label col-3">Username:</label>
-                    <div class="col-6">
-                      <input type="text" id="username" placeholder="Enter Username" class="form-control" required />
-                    </div>
-                  </div>
-                  <div class="mb-3 row justify-content-center align-items-center">
-                    <label for="password" class="form-label col-3">Password:</label>
-                    <div class="col-6">
-                      <input type="password" id="password" placeholder="Enter Password" class="form-control" required />
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary">Login</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Modal -->
-        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Get in touch</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <form onsubmit="handleContactSubmit(); return false;">
-                <div class="modal-body text-start">
-                  <p>Thank you for reaching out!!!</p>
-                  <p>Please enter your email and we will get back to you.</p>
-                  <div class="row align-items-center">
-                    <label for="email" class="form-label col-2">Email:</label>
-                    <div class="col-6">
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
       </section>
+
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Please Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="login-form" onsubmit="handleLogin(); return false;">
+              <div class="modal-body">
+                <div class="mb-3 row justify-content-center align-items-center">
+                  <label for="username" class="form-label col-3">Username:</label>
+                  <div class="col-6">
+                    <input type="text" id="username" placeholder="Enter Username" class="form-control" required />
+                  </div>
+                </div>
+                <div class="mb-3 row justify-content-center align-items-center">
+                  <label for="password" class="form-label col-3">Password:</label>
+                  <div class="col-6">
+                    <input type="password" id="password" placeholder="Enter Password" class="form-control" required />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Get in touch</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form onsubmit="handleContactSubmit(); return false;">
+              <div class="modal-body text-start">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will get back to you.</p>
+                <div class="row align-items-center">
+                  <label for="email" class="form-label col-2">Email:</label>
+                  <div class="col-6">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <footer class="footer">
         <div>
